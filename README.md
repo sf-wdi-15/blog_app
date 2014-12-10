@@ -4,7 +4,7 @@ In this lab we will be making a simple blog platform. In many ways this app will
 
 ##Objective
 
-* User should be able to go to a form, and fill out a blog post containing `post` and `author`.
+* User should be able to go to a form, and fill out a blog post form for a `post` associated as an `author`.
 * When storing the `post` use a `1 to many relationship` between author and blog post.
 * Have a route to only display the blog post by 1 author. Use a url like `/authors/5`
 
