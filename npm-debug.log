@@ -1,0 +1,250 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'express,',
+1 verbose cli   'ejs,',
+1 verbose cli   'body-parser' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'express,', null ]
+6 verbose cache add name=undefined spec="express," args=["express,",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'express,',
+7 verbose parsed url   path: 'express,',
+7 verbose parsed url   href: 'express,' }
+8 verbose cache add [ 'ejs,', null ]
+9 verbose cache add name=undefined spec="ejs," args=["ejs,",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'ejs,',
+10 verbose parsed url   path: 'ejs,',
+10 verbose parsed url   href: 'ejs,' }
+11 verbose cache add [ 'body-parser', null ]
+12 verbose cache add name=undefined spec="body-parser" args=["body-parser",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'body-parser',
+13 verbose parsed url   path: 'body-parser',
+13 verbose parsed url   href: 'body-parser' }
+14 silly lockFile 02e2600c-express express,
+15 verbose lock express, /Users/sandrastark/.npm/02e2600c-express.lock
+16 silly lockFile b43e1afc-ejs ejs,
+17 verbose lock ejs, /Users/sandrastark/.npm/b43e1afc-ejs.lock
+18 silly lockFile 14cf125c-body-parser body-parser
+19 verbose lock body-parser /Users/sandrastark/.npm/14cf125c-body-parser.lock
+20 silly lockFile 02e2600c-express express,
+21 silly lockFile 02e2600c-express express,
+22 silly lockFile b43e1afc-ejs ejs,
+23 silly lockFile b43e1afc-ejs ejs,
+24 silly lockFile 14cf125c-body-parser body-parser
+25 silly lockFile 14cf125c-body-parser body-parser
+26 verbose addNamed [ 'express,', '' ]
+27 verbose addNamed [ null, '*' ]
+28 silly lockFile a82e5fbd-express express,@
+29 verbose lock express,@ /Users/sandrastark/.npm/a82e5fbd-express.lock
+30 verbose addNamed [ 'ejs,', '' ]
+31 verbose addNamed [ null, '*' ]
+32 silly lockFile 6ba9a9af-ejs ejs,@
+33 verbose lock ejs,@ /Users/sandrastark/.npm/6ba9a9af-ejs.lock
+34 verbose addNamed [ 'body-parser', '' ]
+35 verbose addNamed [ null, '*' ]
+36 silly lockFile 9f665704-body-parser body-parser@
+37 verbose lock body-parser@ /Users/sandrastark/.npm/9f665704-body-parser.lock
+38 silly addNameRange { name: 'ejs,', range: '*', hasData: false }
+39 silly addNameRange { name: 'express,', range: '*', hasData: false }
+40 silly addNameRange { name: 'body-parser', range: '*', hasData: false }
+41 verbose request where is /ejs,
+42 verbose request registry https://registry.npmjs.org/
+43 verbose request id 121a2e784ee1ab94
+44 verbose url raw /ejs,
+45 verbose url resolving [ 'https://registry.npmjs.org/', './ejs%2C' ]
+46 verbose url resolved https://registry.npmjs.org/ejs%2C
+47 verbose request where is https://registry.npmjs.org/ejs%2C
+48 info trying registry request attempt 1 at 18:00:37
+49 http GET https://registry.npmjs.org/ejs%2C
+50 verbose request where is /express,
+51 verbose request registry https://registry.npmjs.org/
+52 verbose url raw /express,
+53 verbose url resolving [ 'https://registry.npmjs.org/', './express%2C' ]
+54 verbose url resolved https://registry.npmjs.org/express%2C
+55 verbose request where is https://registry.npmjs.org/express%2C
+56 info trying registry request attempt 1 at 18:00:37
+57 http GET https://registry.npmjs.org/express%2C
+58 verbose request where is /body-parser
+59 verbose request registry https://registry.npmjs.org/
+60 verbose url raw /body-parser
+61 verbose url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
+62 verbose url resolved https://registry.npmjs.org/body-parser
+63 verbose request where is https://registry.npmjs.org/body-parser
+64 info trying registry request attempt 1 at 18:00:37
+65 verbose etag "56VIY4JH5N8CP1YUZKIR2EN5Q"
+66 http GET https://registry.npmjs.org/body-parser
+67 http 200 https://registry.npmjs.org/body-parser
+68 silly registry.get cb [ 200,
+68 silly registry.get   { date: 'Thu, 11 Dec 2014 02:00:38 GMT',
+68 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+68 silly registry.get     etag: '"BASHGSRN6U9AB5HODHFLJEHZ5"',
+68 silly registry.get     'content-type': 'application/json',
+68 silly registry.get     'cache-control': 'max-age=60',
+68 silly registry.get     'content-length': '75731',
+68 silly registry.get     'accept-ranges': 'bytes',
+68 silly registry.get     via: '1.1 varnish',
+68 silly registry.get     age: '16',
+68 silly registry.get     'x-served-by': 'cache-sjc3125-SJC',
+68 silly registry.get     'x-cache': 'HIT',
+68 silly registry.get     'x-cache-hits': '131',
+68 silly registry.get     'x-timer': 'S1418263238.374971,VS0,VE0',
+68 silly registry.get     vary: 'Accept',
+68 silly registry.get     'keep-alive': 'timeout=10, max=50',
+68 silly registry.get     connection: 'Keep-Alive' } ]
+69 http 404 https://registry.npmjs.org/express%2C
+70 verbose headers { date: 'Thu, 11 Dec 2014 02:00:38 GMT',
+70 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+70 verbose headers   'content-type': 'application/json',
+70 verbose headers   'cache-control': 'max-age=0',
+70 verbose headers   'content-length': '52',
+70 verbose headers   'accept-ranges': 'bytes',
+70 verbose headers   via: '1.1 varnish',
+70 verbose headers   age: '0',
+70 verbose headers   'x-served-by': 'cache-sjc3133-SJC',
+70 verbose headers   'x-cache': 'MISS',
+70 verbose headers   'x-cache-hits': '0',
+70 verbose headers   'x-timer': 'S1418263238.376110,VS0,VE34',
+70 verbose headers   'keep-alive': 'timeout=10, max=50',
+70 verbose headers   connection: 'Keep-Alive' }
+71 silly registry.get cb [ 404,
+71 silly registry.get   { date: 'Thu, 11 Dec 2014 02:00:38 GMT',
+71 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+71 silly registry.get     'content-type': 'application/json',
+71 silly registry.get     'cache-control': 'max-age=0',
+71 silly registry.get     'content-length': '52',
+71 silly registry.get     'accept-ranges': 'bytes',
+71 silly registry.get     via: '1.1 varnish',
+71 silly registry.get     age: '0',
+71 silly registry.get     'x-served-by': 'cache-sjc3133-SJC',
+71 silly registry.get     'x-cache': 'MISS',
+71 silly registry.get     'x-cache-hits': '0',
+71 silly registry.get     'x-timer': 'S1418263238.376110,VS0,VE34',
+71 silly registry.get     'keep-alive': 'timeout=10, max=50',
+71 silly registry.get     connection: 'Keep-Alive' } ]
+72 silly lockFile a82e5fbd-express express,@
+73 silly lockFile a82e5fbd-express express,@
+74 silly addNameRange number 2 { name: 'body-parser', range: '*', hasData: true }
+75 silly addNameRange versions [ 'body-parser',
+75 silly addNameRange   [ '1.0.0',
+75 silly addNameRange     '1.0.1',
+75 silly addNameRange     '1.0.2',
+75 silly addNameRange     '1.1.0',
+75 silly addNameRange     '1.1.1',
+75 silly addNameRange     '1.1.2',
+75 silly addNameRange     '1.2.0',
+75 silly addNameRange     '1.2.1',
+75 silly addNameRange     '1.2.2',
+75 silly addNameRange     '1.3.0',
+75 silly addNameRange     '1.3.1',
+75 silly addNameRange     '1.4.0',
+75 silly addNameRange     '1.4.1',
+75 silly addNameRange     '1.4.2',
+75 silly addNameRange     '1.4.3',
+75 silly addNameRange     '1.5.0',
+75 silly addNameRange     '1.5.1',
+75 silly addNameRange     '1.5.2',
+75 silly addNameRange     '1.6.0',
+75 silly addNameRange     '1.6.1',
+75 silly addNameRange     '1.6.2',
+75 silly addNameRange     '1.6.3',
+75 silly addNameRange     '1.6.4',
+75 silly addNameRange     '1.6.5',
+75 silly addNameRange     '1.6.6',
+75 silly addNameRange     '1.6.7',
+75 silly addNameRange     '1.7.0',
+75 silly addNameRange     '1.8.0',
+75 silly addNameRange     '1.8.1',
+75 silly addNameRange     '1.8.2',
+75 silly addNameRange     '1.8.3',
+75 silly addNameRange     '1.8.4',
+75 silly addNameRange     '1.9.0',
+75 silly addNameRange     '1.9.1',
+75 silly addNameRange     '1.9.2',
+75 silly addNameRange     '1.9.3',
+75 silly addNameRange     '1.10.0' ] ]
+76 verbose addNamed [ 'body-parser', '1.10.0' ]
+77 verbose addNamed [ '1.10.0', '1.10.0' ]
+78 silly lockFile 17c720c0-body-parser-1-10-0 body-parser@1.10.0
+79 verbose lock body-parser@1.10.0 /Users/sandrastark/.npm/17c720c0-body-parser-1-10-0.lock
+80 silly lockFile 17c720c0-body-parser-1-10-0 body-parser@1.10.0
+81 silly lockFile 17c720c0-body-parser-1-10-0 body-parser@1.10.0
+82 silly lockFile 9f665704-body-parser body-parser@
+83 silly lockFile 9f665704-body-parser body-parser@
+84 http 404 https://registry.npmjs.org/ejs%2C
+85 verbose headers { date: 'Thu, 11 Dec 2014 02:00:38 GMT',
+85 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+85 verbose headers   'content-type': 'application/json',
+85 verbose headers   'cache-control': 'max-age=0',
+85 verbose headers   'content-length': '52',
+85 verbose headers   'accept-ranges': 'bytes',
+85 verbose headers   via: '1.1 varnish',
+85 verbose headers   age: '0',
+85 verbose headers   'x-served-by': 'cache-sjc3124-SJC',
+85 verbose headers   'x-cache': 'MISS',
+85 verbose headers   'x-cache-hits': '0',
+85 verbose headers   'x-timer': 'S1418263238.378466,VS0,VE150',
+85 verbose headers   'keep-alive': 'timeout=10, max=50',
+85 verbose headers   connection: 'Keep-Alive' }
+86 silly registry.get cb [ 404,
+86 silly registry.get   { date: 'Thu, 11 Dec 2014 02:00:38 GMT',
+86 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+86 silly registry.get     'content-type': 'application/json',
+86 silly registry.get     'cache-control': 'max-age=0',
+86 silly registry.get     'content-length': '52',
+86 silly registry.get     'accept-ranges': 'bytes',
+86 silly registry.get     via: '1.1 varnish',
+86 silly registry.get     age: '0',
+86 silly registry.get     'x-served-by': 'cache-sjc3124-SJC',
+86 silly registry.get     'x-cache': 'MISS',
+86 silly registry.get     'x-cache-hits': '0',
+86 silly registry.get     'x-timer': 'S1418263238.378466,VS0,VE150',
+86 silly registry.get     'keep-alive': 'timeout=10, max=50',
+86 silly registry.get     connection: 'Keep-Alive' } ]
+87 silly lockFile 6ba9a9af-ejs ejs,@
+88 silly lockFile 6ba9a9af-ejs ejs,@
+89 error 404 404 Not Found: express%2C
+89 error 404
+89 error 404 'express%2C' is not in the npm registry.
+89 error 404 You should bug the author to publish it
+89 error 404 It was specified as a dependency of 'blog_app'
+89 error 404
+89 error 404 Note that you can also install from a
+89 error 404 tarball, folder, or http url, or git url.
+90 error System Darwin 13.3.0
+91 error command "node" "/usr/local/bin/npm" "install" "--save" "express," "ejs," "body-parser"
+92 error cwd /Users/sandrastark/Desktop/blog_app
+93 error node -v v0.10.33
+94 error npm -v 1.4.28
+95 error code E404
+96 verbose exit [ 1, true ]
