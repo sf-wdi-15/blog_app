@@ -1,0 +1,19 @@
+<!--views/articles/index.ejs-->
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1>Author index</h1>
+<% authorsList.forEach(function(author) { %>
+<div>
+  <%= author.firstName %>
+  <div>
+    <%= author.lastName %>
+  <div>
+    <%= author.age %>
+  </div>
+  </div>
+</div>
+<!-- this closes foreach loop -->
+<% }) %>
+</body>
+</html>

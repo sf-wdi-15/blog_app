@@ -1,0 +1,18 @@
+<!--views/articles/new.ejs-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>New article</h1>
+    <!-- action = route for url, add to js page -->
+    <form method="post" action="/authors">
+                              <!-- req.body is coming from author -->
+      <input type="text" name="author[firstName]" placeholder="first name"><br />
+      <input type="text" name="author[lastName]" placeholder="last name"><br />
+      
+      <button>Save </button>
+    </form>
+  </body>
+</html>
