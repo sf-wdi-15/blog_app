@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>author index</title>
+</head>
+<body>
+  <h1>Show authorList</h1>
+  <% authorsList.forEach( function (author) { %>
+    <div>
+      <p>
+        <%= author.firstName %> <%= author.lastName %> <br>
+        <a href="/authors/<%= author.id %>">All posts by this author - posts - show</a>
+      <br>
+        <a href="/authors/<%= author.id %>/posts/new">New Post</a>
+      <br>
+      <form method="post" action="/authors/<%= author.id %>?_method=DELETE" ><button>delete</button></form>
+      </p>
+    </div>
+    <hr>
+  <% }); %>
+  <div>
+    <p><a href="/authors/new">create new author</a></p>
+  </div>
+    
+</body>
+</html>
