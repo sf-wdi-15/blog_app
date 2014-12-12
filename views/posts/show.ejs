@@ -1,0 +1,16 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>show post</title>
+</head>
+<body>
+  <h1>Show post</h1>
+    <h3>post title: <%= post.title %></h3> 
+    <p>
+      Post Content: <%= post.content %>
+    </p> 
+    <p>
+      Author: <a href="/authors/<%= post.author.id %>"><%= post.author.firstName %> <%= post.author.lastName %></a>
+    </p> 
+</body>
+</html>

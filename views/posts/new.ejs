@@ -1,0 +1,14 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>new</title>
+</head>
+<body>
+  <h1>New Post</h1>
+  <form method="POST" action="/authors/<%= authorId %>/posts" >
+    <input type="text" name="post[title]" placeholder="post title">
+    <input type="text" name="post[content]" placeholder="post content">
+    <button>save post</button>
+  </form>
+</body>
+</html>

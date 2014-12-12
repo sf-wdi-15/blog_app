@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>show author</title>
+</head>
+<body>
+  <h1>Show Author</h1>
+    <h2>Posts from: <%= author.firstName %> <%= author.lastName %></h2>
+
+     <% author.posts.forEach( function (post) { %>
+     
+     <div>  
+       <h3>Post Title:  <%= post.title %></h3>
+       <p> Post Content: <%= post.content %></p>
+     </div>
+     <hr> 
+
+     <% }) %>
+
+
+    <!-- need to also show posts -->
+
+</body>
+</html>
