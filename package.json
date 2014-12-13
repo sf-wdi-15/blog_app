@@ -1,0 +1,24 @@
+{
+  "name": "blog_app",
+  "version": "0.0.0",
+  "description": "a blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sf-wdi-15/blog_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sf-wdi-15/blog_app/issues"
+  },
+  "homepage": "https://github.com/sf-wdi-15/blog_app",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "ejs": "^1.0.0",
+    "express": "^4.10.6"
+  }
+}
