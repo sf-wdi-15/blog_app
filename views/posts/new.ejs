@@ -18,9 +18,15 @@
     </div>
   </div>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Blogs...</h2>
-    </div>
+    <form action="/authors/<%= author.id %>/posts" method="post">
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Title" name="post[title]">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" type="text" placeholder="Content" name="post[content]"></textarea>
+      </div>
+      <button class="btn btn-primary">Save</button>
+    </form>
   </div>
 </body>
 </html>

@@ -13,14 +13,20 @@
         <a class="navbar-brand" href="/">Blog</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="/authors/<%= author.id %>/posts/new">New Post</a></li>
         <li><a href="/authors">Authors</a></li>
       </ul>
     </div>
   </div>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Blogs...</h2>
+    <div class="row">
+      <h1><a href="/authors/<%=author.id %>"><%= author.firstName %></a></h1>
     </div>
+    <% author.posts.forEach(function (post) { %>
+      <div class="row">
+        <a href="/authors/<%= author.id %>/posts/<%= post.id %>"><%= post.title %></a>
+      </div>
+    <% }) %>
   </div>
 </body>
 </html>
