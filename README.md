@@ -78,12 +78,56 @@ We need to create our database and configure sequelize before we get setup.
 * You might have noticed that we haven't added any foriegn key to our `Posts` table. We need an `author_id`. Ealier we mentioned that migrations can be used to also **add/remove** columns from a table, but we just have to be sure that these tables already exist. **You won't be able to add a column to a table that doesn't exist**, so make sure your tables from the above `model:create` statement are migrated already. 
 * Let's generate a migration to update our `Posts` to have an `author_id`.
 
+	```
+	sequelize migration:create --name add_author_id_to_posts
+	```
+	
+	will create an **empty** migration file that we will have to **update**. The only reason we used this command is because it generates a timestamp with the name of the file, so that we can run our migrations in a particular order
+
+* The following is the text that is in the migration folder we created.
+
+	```
+	
+	"use strict";
+	
+	module.exports = {
+	  up: function(migration, DataTypes, done) {
+	    // add altering commands here, calling 'done' when finished
+	    done();
+	    },
+	 down: function(migration, DataTypes, done) {
+	    // add reverting commands here, calling 'done' when finished
+	    done();
+	    }
+	};
+	
+	```
+
+* We have to edit this file to reflect the changes we want to make.
+
+
 ```
-sequelize migration:create
+	
+	"use strict";
+	
+	module.exports = {
+	  up: function(migration, DataTypes, done) {
+	    // add altering commands here, calling 'done' when finished
+	    migration.addColumn("posts", "authorId", {
+	      type: DataTypes.INTEGER
+	    }).done(done)
+	    },
+	  down: function(migration, DataTypes, done) {
+	    // add reverting commands here, calling 'done' when finished
+	    migration.removeColumn("posts", "authorId").done(done);
+	 }
+	};
+	
 ```
 
-  will create an **empty** migration file that we will have to **update**. The only reason we used this command is because it generates a timestamp with the name of the file, so that we can run our migrations in a particular order.
+* Let's then run  this migration
 
-
-
-
+```
+sequelize db:migrate
+```
+* Our database is now all properly setup.
